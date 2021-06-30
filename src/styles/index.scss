@@ -1,0 +1,97 @@
+@import './variables.scss';
+@import './transition.scss';
+@import './public.scss';
+@import './notify.scss';
+
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+@font-face {
+    font-family: Alibaba;
+    src: url("../static/Alibaba.ttf") format("truetype");
+}
+p,span {
+    font-family: Alibaba;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+input{
+    border: 0px;
+    background-color: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+ }
+ input:focus{
+    outline: none;
+ }
+input::-webkit-input-placeholder {
+    color: #c6c7ce;
+    font-size: inherit;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+div{
+    position: relative;
+}
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+.v-application p {
+    margin-bottom: 0px !important;
+}
